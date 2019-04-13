@@ -9,7 +9,7 @@ services:
   web:
     build: .
     #command: python manage.py runserver 0.0.0.0:8000
-    command: bash -c "sleep 4; chmod +x start.sh && ./start.sh"
+    command: bash -c "sleep 7; chmod +x start.sh && ./start.sh"
     #command: bash -c "sleep 7; python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/blog
