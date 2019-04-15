@@ -24,3 +24,10 @@ class EncryptedPost(models.Model):
     published_date = models.DateTimeField(
             blank=True, null=True)
 
+
+class Comments(models.Model):
+    randomText = models.TextField()
+    frequencyOfAnalysis = models.TextField()
+    standardDeviation = models.CharField(max_length=300)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
