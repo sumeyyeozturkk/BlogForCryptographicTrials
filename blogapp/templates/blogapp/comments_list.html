@@ -1,0 +1,14 @@
+{% extends 'blogapp/base.html' %}
+
+{% block content %}
+    {% for comment in comments %}
+        <div class="post" style="word-break: break-all; word-wrap: break-word;">
+            <p><h4>Random Smile Comment: </h4>{{ comment.randomText|linebreaksbr }}</p>
+            <p><h4>Frequency of Letters: </h4>{{ comment.frequencyOfAnalysis|linebreaksbr }}</p>
+            <p><h4>Standard Deviation: </h4>{{ comment.standardDeviation|linebreaksbr }}</p>
+            <div class="date">
+                {{ comment.published_date }}
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

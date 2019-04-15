@@ -2,3 +2,4 @@ Django>=2.0
 psycopg2>=2.7
 pycrypto
 Crypto
+numpy
