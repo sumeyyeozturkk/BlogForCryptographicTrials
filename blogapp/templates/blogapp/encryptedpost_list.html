@@ -1,0 +1,15 @@
+{% extends 'blogapp/base.html' %}
+
+{% block content %}
+    {% for post in encryptedPosts %}
+        <div class="post" style="word-break: break-all; word-wrap: break-word;">
+           	<h1>{{ post.title }}</a></h1>
+            <p><h4>Post Text: </h4>{{ post.plainText|linebreaksbr }}</p>
+            <p><h4>Post Encrypted: </h4>{{ post.encryptedText|linebreaksbr }}</p>
+            <p><h4>Post Dencrypted: </h4>{{ post.decryptedText|linebreaksbr }}</p>
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
