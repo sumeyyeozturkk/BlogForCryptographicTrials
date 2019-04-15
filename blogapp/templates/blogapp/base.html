@@ -1,7 +1,7 @@
 {% load static %}
 <html>
     <head>
-        <title>Sümeyye'nin Günlüğü</title>
+        <title>Sümeyye's Diary</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -9,6 +9,8 @@
     </head>
     <body>
         <div class="page-header">
+            <a href="{% url 'EncPost' %}" class="top-menu"><span>Encrypted Post</span></a>
+            <h1><a href="/">Sümeyye's Diary</a></h1>
         </div>
         <div class="content container">
             <div class="row">
